@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengshao.app.college_journal.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.hengshao.app.college_journal.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_heightPercent="9%">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="发布校刊"
+        android:textColor="#f7f3f3"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_marginLeftPercent="5%"
+        android:textStyle="bold"/>
+
+    </com.hengshao.app.college_journal.PercentLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginTopPercent="2%"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="@color/red"
+        android:text="姓名："/>
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginRightPercent="8%"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/red"
+        android:shadowColor="@color/red"
+        android:background="@drawable/edit_boder_pwd"
+        android:hint="输入新姓名"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginTopPercent="3%"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="@color/red"
+        android:text="学校："/>
+
+    <EditText
+        android:id="@+id/school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginRightPercent="8%"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/red"
+        android:shadowColor="@color/red"
+        android:background="@drawable/edit_boder_pwd"
+        android:hint="输入新学校"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginTopPercent="3%"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="@color/red"
+        android:text="电话号码："/>
+
+    <EditText
+        android:id="@+id/old_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        android:inputType="phone"
+        android:maxLength="11"
+        app:layout_marginRightPercent="8%"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginTopPercent="2%"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/red"
+        android:shadowColor="@color/red"
+        android:background="@drawable/edit_boder_pwd"
+        android:hint="输入旧电话"/>
+
+    <EditText
+        android:id="@+id/new_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        android:inputType="phone"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginTopPercent="3%"
+        app:layout_marginRightPercent="8%"
+        android:paddingLeft="10dp"
+        android:maxLength="11"
+        android:textSize="15sp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/red"
+        android:shadowColor="@color/red"
+        android:background="@drawable/edit_boder_pwd"
+        android:hint="输入新电话"/>
+
+
+    <CheckBox
+        android:text="是否需要更改电话"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginLeftPercent="7%"
+        android:textColor="@color/red"
+        app:layout_marginTopPercent="3%"
+        android:id="@+id/checkBox" />
+
+    <com.hengshao.app.college_journal.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_marginTopPercent="2%"
+        app:layout_heightPercent="8%"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginRightPercent="8%">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_male"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="60%"
+            app:layout_widthPercent="18%"
+            app:layout_marginLeftPercent="30%"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="7dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_boder_pwd">
+        <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/male_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_text"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="男"/>
+
+                <ImageView
+                    android:id="@+id/male_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/hcx_ok_white"
+                    android:layout_gravity="right"
+                    app:layout_marginTopPercent="5%"
+                    app:layout_marginRightPercent="8%"/>
+            </android.support.percent.PercentFrameLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_female"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="60%"
+            app:layout_widthPercent="18%"
+            app:cardCornerRadius="5dp"
+            app:layout_marginLeftPercent="8%"
+            android:layout_gravity="center"
+            app:cardElevation="7dp">
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/female_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_text"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="女"/>
+
+                <ImageView
+                    android:id="@+id/female_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:visibility="gone"
+                    android:src="@drawable/hcx_ok_white"
+                    android:layout_gravity="right"
+                    app:layout_marginTopPercent="5%"
+                    app:layout_marginRightPercent="8%"/>
+            </android.support.percent.PercentFrameLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </com.hengshao.app.college_journal.PercentLinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/modify_data"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="28%"
+            app:layout_heightPercent="6%"
+            android:layout_gravity="center"
+            app:layout_marginTopPercent="5%"
+            android:gravity="center"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            android:background="@drawable/edit_boder_pwd">
+            <com.hengshao.app.college_journal.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="17sp"
+            app:layout_widthPercent="68%"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/main_text"
+            android:text="修改资料"
+            android:id="@+id/register_success_text" />
+
+            </com.hengshao.app.college_journal.PercentLinearLayout>
+        </android.support.v7.widget.CardView>
+
+</com.hengshao.app.college_journal.PercentLinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengshao.app.college_journal.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.hengshao.app.college_journal.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_heightPercent="9%">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="更改密码"
+            android:textColor="#f7f3f3"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            app:layout_marginLeftPercent="5%"
+            android:textStyle="bold"/>
+
+    </com.hengshao.app.college_journal.PercentLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginTopPercent="5%"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="@color/red"
+        android:text="旧密码:"/>
+
+    <EditText
+        android:id="@+id/old_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginRightPercent="8%"
+        android:paddingLeft="10dp"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnm,./?;:'|\{}[]+=-_"
+        android:textSize="15sp"
+        android:inputType="numberPassword"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/red"
+        android:shadowColor="@color/red"
+        android:background="@drawable/edit_boder_pwd"
+        android:hint="输入旧密码"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginTopPercent="3%"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="@color/red"
+        android:text="新密码:"/>
+
+    <EditText
+        android:id="@+id/new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginTopPercent="2%"
+        android:inputType="numberPassword"
+        app:layout_marginRightPercent="8%"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnm,./?;:'|\{}[]+=-_"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/red"
+        android:shadowColor="@color/red"
+        android:background="@drawable/edit_boder_pwd"
+        android:hint="输入新密码"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginTopPercent="5%"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="@color/red"
+        android:text="确认密码:"/>
+
+    <EditText
+        android:id="@+id/affirm_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="5%"
+        android:inputType="numberPassword"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginRightPercent="8%"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnm,./?;:'|\{}[]+=-_"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/red"
+        android:shadowColor="@color/red"
+        android:background="@drawable/edit_boder_pwd"
+        android:hint="再一次确认密码"/>
+
+    <com.hengshao.app.college_journal.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="28%"
+        app:layout_heightPercent="6%"
+        android:layout_gravity="center"
+        android:foreground="@drawable/ripple_red"
+        app:layout_marginTopPercent="20.86%"
+        android:gravity="center"
+        android:id="@+id/modify_pwd">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="17sp"
+            app:layout_widthPercent="68%"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:text="更改密码"
+            android:id="@+id/register_success_text" />
+
+    </com.hengshao.app.college_journal.PercentLinearLayout>
+
+</com.hengshao.app.college_journal.PercentLinearLayout>

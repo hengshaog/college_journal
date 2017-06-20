@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b10306</color>
+    <color name="colorPrimaryDark">#ba001c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="whilte">#ffffff</color>
+    <color name="publish">#8302bf</color>
+    <color name="nearby">#00b2d6</color>
+    <color name="red">#974141</color>
+    <color name="back">#d4d3d3</color>
+    <color name="fb_title_small">#9bafd8</color>
+    <color name="fb_title_big">#e9c42d39</color>
+    <color name="main_text">#666666</color>
+</resources>

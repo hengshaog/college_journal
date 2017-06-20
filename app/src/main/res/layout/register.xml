@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengshao.app.college_journal.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whilte">
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="40%"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardBackgroundColor="@color/whilte"
+            app:cardCornerRadius="75dp"
+            app:cardElevation="20dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/login" />
+        </android.support.v7.widget.CardView>
+
+    </android.support.percent.PercentFrameLayout>
+
+
+    <com.hengshao.app.college_journal.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="55.33%"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+    <com.hengshao.app.college_journal.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="68%"
+        app:layout_heightPercent="12%"
+        android:background="@drawable/edit_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="90%"
+            android:layout_gravity="center"
+            app:layout_widthPercent="10%"
+            android:src="@drawable/phone"/>
+        <EditText
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:ems="11"
+            android:paddingLeft="5dp"
+            android:maxLength="11"
+            android:textColor="@color/fb_title_small"
+            android:shadowColor="@color/fb_title_big"
+            android:hint="手机"
+            android:textSize="15sp"
+            android:id="@+id/edittelephone"
+            android:layout_weight="1" />
+    </com.hengshao.app.college_journal.PercentLinearLayout>
+
+        <com.hengshao.app.college_journal.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="68%"
+            app:layout_marginTopPercent="3%"
+            app:layout_heightPercent="12%"
+            android:background="@drawable/edit_border">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_heightPercent="50%"
+                android:layout_gravity="center"
+                app:layout_widthPercent="10%"
+                android:src="@drawable/password"/>
+            <EditText
+                android:textCursorDrawable="@null"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="numberPassword"
+                android:digits="0123456789qwertyuiopasdfghjklzxcvbnm,./?;:'|\{}[]+=-_"
+                android:maxLength="16"
+                android:paddingLeft="5dp"
+                android:ems="11"
+                android:textColor="@color/fb_title_small"
+                android:shadowColor="@color/fb_title_big"
+                android:hint="密码"
+                android:textSize="15sp"
+                android:id="@+id/editpassword"
+                android:layout_weight="1" />
+        </com.hengshao.app.college_journal.PercentLinearLayout>
+
+        <com.hengshao.app.college_journal.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="68%"
+            app:layout_marginTopPercent="3%"
+            app:layout_heightPercent="12%"
+            android:background="@drawable/edit_border">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_heightPercent="60%"
+                android:layout_gravity="center"
+                app:layout_widthPercent="10%"
+                android:src="@drawable/school"/>
+            <EditText
+                android:textCursorDrawable="@null"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:textColor="@color/fb_title_small"
+                android:shadowColor="@color/fb_title_big"
+                android:paddingLeft="5dp"
+                android:hint="学院"
+                android:textSize="15sp"
+                android:id="@+id/editschool"
+                android:layout_weight="1" />
+        </com.hengshao.app.college_journal.PercentLinearLayout>
+
+        <com.hengshao.app.college_journal.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="68%"
+            app:layout_marginTopPercent="3%"
+            app:layout_heightPercent="12%"
+            android:background="@drawable/edit_border">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_heightPercent="50%"
+                android:layout_gravity="center"
+                app:layout_widthPercent="10%"
+                android:src="@drawable/sex"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:text="性别"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_male"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="65%"
+                app:layout_widthPercent="23%"
+                app:layout_marginLeftPercent="26%"
+                app:cardCornerRadius="5dp"
+                android:layout_gravity="center"
+                app:cardElevation="7dp">
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/male_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_text"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="男"/>
+
+                <ImageView
+                    android:id="@+id/male_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/hcx_ok_white"
+                    android:layout_gravity="right"
+                    app:layout_marginTopPercent="5%"
+                    app:layout_marginRightPercent="5%"/>
+            </android.support.percent.PercentFrameLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_female"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="65%"
+                app:layout_widthPercent="23%"
+                app:layout_marginLeftPercent="3%"
+                app:cardCornerRadius="5dp"
+                android:layout_gravity="center"
+                app:cardElevation="7dp">
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/female_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_text"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="女"/>
+
+                <ImageView
+                    android:id="@+id/female_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:visibility="gone"
+                    android:src="@drawable/hcx_ok_white"
+                    android:layout_gravity="right"
+                    app:layout_marginTopPercent="5%"
+                    app:layout_marginRightPercent="5%"/>
+            </android.support.percent.PercentFrameLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </com.hengshao.app.college_journal.PercentLinearLayout>
+
+
+
+    <com.hengshao.app.college_journal.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="68%"
+        app:layout_heightPercent="12%"
+        android:background="@drawable/register_button"
+        app:layout_marginTopPercent="28.86%"
+        android:gravity="center"
+        android:id="@+id/register_succeed">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="17sp"
+            app:layout_widthPercent="68%"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/whilte"
+            android:text="注册"
+            android:id="@+id/register_success_text" />
+
+    </com.hengshao.app.college_journal.PercentLinearLayout>
+</com.hengshao.app.college_journal.PercentLinearLayout>
+</com.hengshao.app.college_journal.PercentLinearLayout>

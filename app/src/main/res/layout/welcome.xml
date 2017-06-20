@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengshao.app.college_journal.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_marginBottomPercent="30%"
+        android:textColor="@color/fb_title_big"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:text="Welcome to 校刊"/>
+
+</com.hengshao.app.college_journal.PercentLinearLayout>

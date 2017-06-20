@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengshao.app.college_journal.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.hengshao.app.college_journal.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_heightPercent="9%">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="发布校刊"
+            android:textColor="#f7f3f3"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            app:layout_marginLeftPercent="5%"
+            android:textStyle="bold"/>
+
+    </com.hengshao.app.college_journal.PercentLinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="60%"
+        android:layout_gravity="center"
+        app:layout_marginTopPercent="3%"
+        app:cardElevation="7dp"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/red"
+            android:shadowColor="@color/red"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:hint="请输入标题"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="60%"
+        android:layout_gravity="center"
+        app:layout_marginTopPercent="3%"
+        app:cardElevation="7dp"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%">
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:paddingTop="15dp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/red"
+            android:shadowColor="@color/red"
+            android:gravity="top"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:hint="请输入标题"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/succeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="7dp"
+        app:layout_marginLeftPercent="36%"
+        app:layout_marginRightPercent="36%"
+        app:layout_marginTopPercent="5%"
+        app:layout_heightPercent="6%">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="发布校刊"/>
+    </android.support.v7.widget.CardView>
+
+</com.hengshao.app.college_journal.PercentLinearLayout>
